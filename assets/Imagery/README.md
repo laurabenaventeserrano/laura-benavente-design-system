@@ -1,0 +1,1 @@
+Real material from the portfolio. `laura-portrait.png` is Laura's portrait. `ifirm-dashboard.png` and `story2.png` are case-study product shots (reconstructions: say so in the caption). `laptop-mockup-story-2.png` is the Story 02 hero mockup; `laptop-blank.png` is the empty laptop frame for new mockups. Show media on `bg-panel`, never with a shadow or rounded corners above 2px.

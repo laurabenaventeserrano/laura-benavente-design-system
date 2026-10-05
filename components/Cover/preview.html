@@ -1,0 +1,56 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Laura Benavente</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg-page); color:var(--text-primary); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; }
+  .art svg { display:block; width:480px; height:288px; }
+  .slab { fill:var(--text-primary); }
+  .panel { fill:var(--grey-200); }
+  .meta { fill:var(--text-meta); }
+  .blk { rx:var(--radius-default); }
+  .s1 { stop-color:var(--prism-1); } .s2 { stop-color:var(--prism-2); } .s3 { stop-color:var(--prism-3); }
+  .s4 { stop-color:var(--prism-4); } .s5 { stop-color:var(--prism-5); } .s6 { stop-color:var(--prism-6); } .s7 { stop-color:var(--prism-7); }
+  .rule { fill:url(#prism); }
+  .words { position:absolute; left:var(--space-48); bottom:var(--space-32); max-width:440px; }
+  .name { margin:0; font-family:var(--font-serif); font-weight:400; font-size:88px; line-height:.95; letter-spacing:-.025em; color:var(--text-primary); }
+  .tag { margin:var(--space-12) 0 0 2px; font-size:14px; line-height:20px; color:var(--text-meta); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      text-primary slab 160 wide bleeding top and bottom (the ink the brand is known by) · grey-200 panel 208×144 · text-meta 48×48 once · about 40% of 960×288
+  arrangement one tall ink slab on the right edge with two satellites stepped down the left, gaps of space-16 and space-32
+  pattern     editorial hairlines, from "the prism is only ever a 1px line": four 1px prism rules (prism-1 to prism-7) crossing the blocks at space-48 steps
+  scales      sides in space-16 and space-48 multiples; corners radius-default (2px); rule weight border-width (1px)
+-->
+<defs>
+  <linearGradient id="prism" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="480" y2="0">
+    <stop class="s1" offset="0"/><stop class="s2" offset=".18"/><stop class="s3" offset=".36"/><stop class="s4" offset=".53"/>
+    <stop class="s5" offset=".70"/><stop class="s6" offset=".85"/><stop class="s7" offset="1"/>
+  </linearGradient>
+</defs>
+<rect class="panel blk" x="48" y="96" width="208" height="144" rx="2"/>
+<rect class="meta blk" x="0" y="48" width="48" height="48" rx="2"/>
+<rect class="slab blk" x="320" y="-8" width="160" height="304" rx="2"/>
+<rect class="rule" x="0" y="48" width="480" height="1"/>
+<rect class="rule" x="48" y="144" width="432" height="1"/>
+<rect class="rule" x="0" y="192" width="480" height="1"/>
+<rect class="rule" x="160" y="240" width="320" height="1"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Laura<br>Benavente</h1>
+  <p class="tag">Black and white, with one colour moment: the prism, as a line.</p>
+</div>
+</div>
+</body>
+</html>

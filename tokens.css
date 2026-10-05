@@ -1,0 +1,96 @@
+/* Laura Benavente design tokens. Generated from tokens.json. */
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;1,400&family=Roboto:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap");
+
+:root, [data-theme="light"] {
+  --bg-page: var(--white);
+  --bg-panel: var(--paper-inset);
+  --text-primary: var(--ink);
+  --text-body: var(--ink-body);
+  --text-meta: var(--ink-meta);
+  --line-default: rgba(20, 20, 22, 0.16);
+  --line-strong: rgba(20, 20, 22, 0.28);
+  --selection-bg: var(--ink);
+  --selection-text: var(--white);
+  --focus: var(--ink);
+  --white: #FFFFFF;
+  --paper-inset: #F4F4F5;
+  --grey-200: #E7E7E9;
+  --ink: #111111;
+  --ink-body: #3A3835;
+  --ink-meta: #6B6863;
+  --ground: #0A0A0C;
+  --ground-raised: #141416;
+  --ink-on-dark: #F4F4F5;
+  --ink-on-dark-2: #BDB9B3;
+  --ink-on-dark-meta: #8C8A87;
+  --lilac: #E7BFFF;
+  --prism-1: #1E2A78;
+  --prism-2: #2F5FD0;
+  --prism-3: #2FA7C4;
+  --prism-4: #63BE6E;
+  --prism-5: #E3C64B;
+  --prism-6: #E8834B;
+  --prism-7: #E2436B;
+}
+
+[data-theme="dark"] {
+  --bg-page: var(--ground);
+  --bg-panel: var(--ground-raised);
+  --text-primary: var(--ink-on-dark);
+  --text-body: var(--ink-on-dark-2);
+  --text-meta: var(--ink-on-dark-meta);
+  --line-default: rgba(244, 244, 245, 0.14);
+  --line-strong: rgba(244, 244, 245, 0.28);
+  --selection-bg: var(--white);
+  --selection-text: var(--ground);
+  --focus: var(--ink-on-dark);
+}
+
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --max-width: 1440px;
+  --header-height: 72px;
+  --button-height: 44px;
+  --grid-gap: 32px;
+  --radius-default: 2px;
+  --radius-round: 50%;
+  --border-width: 1px;
+  --border-width-hover: 1.5px;
+  --gutter: clamp(20px, 6.667vw, 96px);
+  --section-y: clamp(72px, 8.4vw, 120px);
+  --grid-columns: 12;
+  --prism: linear-gradient(90deg, #1E2A78 0%, #2F5FD0 18%, #2FA7C4 36%, #63BE6E 53%, #E3C64B 70%, #E8834B 85%, #E2436B 100%);
+  --prism-v: linear-gradient(180deg, #1E2A78 0%, #2F5FD0 18%, #2FA7C4 36%, #63BE6E 53%, #E3C64B 70%, #E8834B 85%, #E2436B 100%);
+  --prism-sm: linear-gradient(90deg, #2F5FD0, #63BE6E, #E3C64B, #E2436B);
+  --type-display-giant: clamp(72px, 11vw, 160px);
+  --type-display-hero: clamp(48px, 6.7vw, 96px);
+  --type-heading-xl: clamp(44px, 6.1vw, 88px);
+  --type-heading-l: clamp(36px, 4.4vw, 64px);
+  --type-heading-m: clamp(28px, 3vw, 44px);
+  --type-heading-s: clamp(22px, 2.1vw, 30px);
+  --type-body-lead: clamp(18px, 1.4vw, 20px);
+  --font-serif: 'Libertinus Serif', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Roboto', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+.display-giant { font-family: var(--font-serif); font-size: var(--type-display-giant); line-height: 0.9; letter-spacing: -0.025em; font-weight: 400; }
+.display-hero { font-family: var(--font-serif); font-size: var(--type-display-hero); line-height: 0.95; letter-spacing: -0.025em; font-weight: 400; }
+.heading-xl { font-family: var(--font-serif); font-size: var(--type-heading-xl); line-height: 0.95; letter-spacing: -0.015em; font-weight: 400; }
+.heading-l { font-family: var(--font-serif); font-size: var(--type-heading-l); line-height: 1; letter-spacing: -0.015em; font-weight: 400; }
+.heading-m { font-family: var(--font-serif); font-size: var(--type-heading-m); line-height: 1.05; letter-spacing: -0.015em; font-weight: 400; }
+.heading-s { font-family: var(--font-serif); font-size: var(--type-heading-s); line-height: 1.1; letter-spacing: -0.015em; font-weight: 400; }
+.logo { font-family: var(--font-serif); font-size: 20px; line-height: 1; letter-spacing: 0.01em; font-weight: 400; }
+.body-lead { font-family: var(--font-sans); font-size: var(--type-body-lead); line-height: 1.55; letter-spacing: 0; font-weight: 400; }
+.body-default { font-family: var(--font-sans); font-size: 17px; line-height: 1.6; letter-spacing: 0; font-weight: 400; }
+.label-button { font-family: var(--font-sans); font-size: 13px; line-height: 1; letter-spacing: 0.01em; font-weight: 500; }
+.label-kicker { font-family: var(--font-mono); font-size: 12px; line-height: 1.4; letter-spacing: 0.2em; font-weight: 400; text-transform: uppercase; }
+.label-meta { font-family: var(--font-mono); font-size: 11px; line-height: 1.4; letter-spacing: 0.16em; font-weight: 400; text-transform: uppercase; }
+.label-tag { font-family: var(--font-mono); font-size: 10px; line-height: 1.4; letter-spacing: 0.12em; font-weight: 400; text-transform: uppercase; }

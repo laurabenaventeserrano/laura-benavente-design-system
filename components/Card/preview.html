@@ -1,0 +1,23 @@
+<!-- @dsCard group="Content" height=420 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Card</title>
+<style>
+  body{margin:0;padding:24px;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);}
+  .row{display:flex;flex-wrap:wrap;align-items:center;gap:24px;}
+  .col{display:flex;flex-direction:column;gap:12px;}
+  .panel{background:var(--bg-panel);padding:20px;}
+  .cap{font:400 11px/1.4 var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-meta);margin:0 0 8px;}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,280px));gap:32px;}
+</style>
+</head>
+<body>
+<div id="r" class="grid"></div>
+<script>
+  var L = window.LB, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('r')).render(h(React.Fragment, null,
+    h(L.Card, {href:'#', media:'../../assets/Imagery/ifirm-dashboard.png', mediaAlt:'Dashboard reconstruction', kicker:'Story 01', title:'From complexity to clarity', meta:'Wolters Kluwer · B2B SaaS'}, 'Ecosystem and AI strategy.'),
+    h(L.Card, {kicker:'Lab', title:'100 days playing with AI', meta:'Experiments · 2026'}, 'A daily creative practice.')));
+</script>
+</body>
+</html>

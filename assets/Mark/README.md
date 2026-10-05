@@ -1,0 +1,1 @@
+`favicon-16x16.png` is the favicon the site ships: a prism ring with a black dot. Use it as the browser favicon only; for any other size use the `Mark` component, which draws the same ring (stroke 2.5/32) and dot (r 5/32) as vectors.

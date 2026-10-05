@@ -1,0 +1,1 @@
+The line icon set: 24px grid, 1.25px stroke, butt caps, miter joins, no fills. Every file is single-ink `#111111` (for light grounds); on dark grounds apply `filter: invert(1)` or inline the path with `stroke="currentColor"`. Use at 32, 24, 20 or 16px, never smaller. `prism` is a triangle glyph, not the colour gradient.

@@ -1,0 +1,23 @@
+<!-- @dsCard group="Actions" height=200 subtitle="Hover to see the primary invert and the tertiary underline" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button</title>
+<style>
+  body{margin:0;padding:24px;background:var(--bg-page);color:var(--text-primary);font-family:var(--font-sans);}
+  .row{display:flex;flex-wrap:wrap;align-items:center;gap:24px;}
+  .col{display:flex;flex-direction:column;gap:12px;}
+  .panel{background:var(--bg-panel);padding:20px;}
+  .cap{font:400 11px/1.4 var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text-meta);margin:0 0 8px;}
+
+</style>
+</head>
+<body>
+<div class="col"><div><p class="cap">On page</p><div id="a" class="row"></div></div><div class="panel" data-surface="panel"><p class="cap">On a panel</p><div id="b" class="row"></div></div></div>
+<script>
+  var L = window.LB, h = React.createElement;
+  function set(){ return h(React.Fragment, null, h(L.Button, {level:'primary'}, 'See the work'), h(L.Button, {level:'secondary'}, 'Download CV'), h(L.Button, {level:'tertiary', href:'#'}, 'Read the story')); }
+  ReactDOM.createRoot(document.getElementById('a')).render(set());
+  ReactDOM.createRoot(document.getElementById('b')).render(set());
+</script>
+</body>
+</html>
